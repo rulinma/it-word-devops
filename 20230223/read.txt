@@ -1,0 +1,42 @@
+# AI记单词
+
+## 目录说明
+
+linux.ova
+   虚拟机，我使用的是virtual box，导入应该就可以，可能需要设置一下网络，桥接。
+
+word-backend
+   后端代码
+
+word-web
+   前端代码
+
+## 使用说明
+
+### 数据库用户名和密码
+
+    root/adminDev123$
+    demo/adminDev123$
+
+### 前端用户名和密码
+
+    admin@qq.com/12345
+
+### 详细参考说明参考（本版内容持续更新在这里）
+
+    https://github.com/rulinma/it-word-devops/blob/main/20230223/README.md
+
+## 参考
+
+1. https://github.com/rulinma/it
+2. https://github.com/rulinma/it-word
+3. https://github.com/rulinma/it-word-devops
+
+## 联系
+
+邮箱：rulinma@qq.com
+微信：rulinma
+
+## 申明
+
+我自认为所有内容都是没有版权问题的，如果有疏忽，有侵权的，联系我必删除。
