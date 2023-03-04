@@ -2,14 +2,23 @@
 
 ## 目录说明
 
-linux.ova
+banana.ova
    虚拟机，我使用的是virtual box，导入应该就可以，可能需要设置一下网络，桥接。
+
+base-parent
+   依赖pom
 
 word-backend
    后端代码
 
 word-web
    前端代码
+
+word-manage-backend
+   管理后台后端
+
+word-manage-front
+   管理后台前端
 
 ## 使用说明
 
@@ -39,4 +48,4 @@ word-web
 
 ## 申明
 
-侵权必删。
+我自认为所有内容都是没有版权问题的，如果有疏忽，有侵权的，联系我必删除。
