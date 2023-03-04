@@ -64,6 +64,13 @@
   * 用户名和密码
     * admin@qq.com/12345
 
+* 发布管理后台后端
+
+* 发布管理后台前端
+  * 用户名和密码
+    * admin/123456
+    * 模拟登录，没有进行后端验证
+
 * 其他问题
   * 关闭邮件提醒
     * echo "unset MAILCHECK">> /etc/profile
@@ -74,6 +81,8 @@
   * cat /etc/hosts
     * 192.168.1.10 www.test.xianglesong.com
     * 192.168.1.10 api.test.xianglesong.com
+    * 192.168.1.10 admin-inner.test.xianglesong.com
+    * 192.168.1.10 api-admin-inner.test.xianglesong.com
     * ...
 
 * <http://api.test.xianglesong.com/api/ping>
@@ -84,6 +93,12 @@
   * 前端地址
 * <http://192.168.1.10:8848/nacos>
   * nacos地址
+* <http://admin-inner.test.xianglesong.com/api/ping>
+  * pong
+* <http://admin-inner.test.xianglesong.com/api/swagger-ui.html>
+  * 管理后台swagger地址
+* <http://api-admin-inner.test.xianglesong.com>
+  * 管理后台前端地址
 
 * 启动过程可能需要点时间
   * 查看日志
@@ -92,19 +107,21 @@
     * netstat -tlpn
 
       ``` shell
-      Active Internet connections (only servers)
-      Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
-      tcp        0      0 0.0.0.0:6379            0.0.0.0:*               LISTEN      911/redis-server 0.
-      tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      984/nginx: master p
-      tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      905/sshd
-      tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1371/master
-      tcp6       0      0 :::3306                 :::*                    LISTEN      1002/mysqld
-      tcp6       0      0 ::1:6379                :::*                    LISTEN      911/redis-server 0.
-      tcp6       0      0 :::8719                 :::*                    LISTEN      1722/java
-      tcp6       0      0 :::8848                 :::*                    LISTEN      1061/java
-      tcp6       0      0 :::8081                 :::*                    LISTEN      1722/java
-      tcp6       0      0 :::22                   :::*                    LISTEN      905/sshd
-      tcp6       0      0 ::1:25                  :::*                    LISTEN      1371/master
+          Active Internet connections (only servers)
+          Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+          tcp        0      0 0.0.0.0:6379            0.0.0.0:*               LISTEN      952/redis-server 0.
+          tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1031/nginx: master
+          tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      951/sshd
+          tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1382/master
+          tcp6       0      0 :::3306                 :::*                    LISTEN      1050/mysqld
+          tcp6       0      0 ::1:6379                :::*                    LISTEN      952/redis-server 0.
+          tcp6       0      0 :::8719                 :::*                    LISTEN      2132/java
+          tcp6       0      0 :::8720                 :::*                    LISTEN      13333/java
+          tcp6       0      0 :::8848                 :::*                    LISTEN      1104/java
+          tcp6       0      0 :::8081                 :::*                    LISTEN      2132/java
+          tcp6       0      0 :::22                   :::*                    LISTEN      951/sshd
+          tcp6       0      0 ::1:25                  :::*                    LISTEN      1382/master
+          tcp6       0      0 :::9001                 :::*                    LISTEN      13333/java
       ```
 
 ## 说明
