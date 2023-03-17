@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# sh shell/warm_words.sh
+
 . shell/mysqlConn.sh
 
 prefix=https://www.xianglesong.com/word/
