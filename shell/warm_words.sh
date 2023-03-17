@@ -9,7 +9,7 @@ echo $prefix
 # select列数
 column_num=2
 
-selectSql="select id, word from word_basic"
+selectSql="select id, word from word_basic order by rank asc"
 
 # 调用方法执行sql，打印出sql执行结果但不获取返回值
 mysqlExecute "$selectSql"
