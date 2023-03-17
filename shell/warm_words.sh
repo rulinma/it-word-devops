@@ -28,8 +28,8 @@ for ((i = 1; i <= $row_num; i = i + 1)); do
     id=$(getValueFromResult $((i)) 1 $column_num ${result[*]})
     # 获取第二列的值
     word=$(getValueFromResult $((i)) 2 $column_num ${result[*]})
-    # echo "id: $id, name: $word"
-    echo $word
+    echo "id: $id, name: $word"
+    # echo $word
     echo $prefix$word
     curl $prefix$word >/dev/null 2>&1
     sleep 3
