@@ -31,6 +31,7 @@ for ((i = 1; i <= $row_num; i = i + 1)); do
     # echo "id: $id, name: $word"
     # echo $word
     echo $prefix$word".jpg"
-    cp $prefix$word".jpg" /tmp/images
+    # cp $prefix$word".jpg" /tmp/images
+    convert /tmp/images/$word.jpg -trim -resize 250x250 /tmp/images/$word.jpg
     # sleep 3
 done
